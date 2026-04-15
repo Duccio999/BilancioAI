@@ -1,36 +1,370 @@
-Termini e Condizioni di BilancioAI
-Ultimo aggiornamento: 15/04/2026
-I presenti Termini e Condizioni disciplinano l'utilizzo dell'app BilancioAI. 
-1. Titolare / Sviluppatore
-L'App è fornita da: Duccio Della Bella Contatto: ducciodellabella@gmail.com
-2. Oggetto del servizio
-BilancioAI è uno strumento digitale di supporto alla gestione personale delle spese e dei movimenti economici. L'App può aiutare l'utente a leggere, organizzare e classificare informazioni economiche ricavate da notifiche o dati inseriti manualmente. 
-3. Natura del servizio
-BilancioAI fornisce un supporto organizzativo e informativo. L'App non costituisce servizio bancario, finanziario, di investimento, fiscale o consulenza professionale. 
-Le informazioni, categorizzazioni, riepiloghi o suggerimenti forniti dall'App hanno finalità meramente informative e di supporto personale. 
-4. Responsabilità dell'utente
-L'utente è responsabile di:
-* verificare la correttezza dei dati mostrati dall'App;
-* controllare eventuali categorizzazioni automatiche;
-* usare l'App in modo lecito e conforme alle regole applicabili;
-* custodire il proprio dispositivo e le relative autorizzazioni.
-5. Limitazioni del servizio
-L'App potrebbe non riconoscere correttamente tutte le notifiche, tutti gli importi o tutti gli esercenti. Potrebbero verificarsi errori, duplicazioni, omissioni o categorizzazioni imprecise. 
-L'utente riconosce che l'uso dell'App avviene sotto la propria responsabilità e che i dati mostrati devono essere verificati prima di assumere decisioni economiche o personali. 
-6. Disponibilità e modifiche
-Lo sviluppatore si riserva il diritto di modificare, sospendere o interrompere, in tutto o in parte, l'App o alcune sue funzioni, anche senza preavviso, salvo quanto richiesto dalla legge applicabile. 
-7. Proprietà intellettuale
-Il software, il nome BilancioAI, il design, i contenuti originali e gli elementi distintivi dell'App restano di titolarità dello sviluppatore o dei rispettivi aventi diritto. È vietata la copia, distribuzione, modifica o utilizzazione non autorizzata. 
-8. Esclusione di garanzie
-L'App è fornita “così com'è” e “secondo disponibilità”, nei limiti consentiti dalla legge. Lo sviluppatore non garantisce che l'App sia priva di errori, sempre disponibile o adatta a esigenze specifiche dell'utente. 
-9. Limitazione di responsabilità
-Nei limiti consentiti dalla legge, lo sviluppatore non sarà responsabile per danni indiretti, perdita di dati, perdita di opportunità, mancati risparmi o decisioni prese dall'utente sulla base delle informazioni mostrate dall'App. 
-Resta ferma la responsabilità nei casi in cui essa non possa essere esclusa o limitata per legge. 
-10. Privacy
-L'utilizzo dell'App è soggetto anche alla relativa Informativa sulla Privacy, che costituisce parte integrante della documentazione informativa del servizio. 
-11. Modifiche ai Termini
-I presenti Termini possono essere aggiornati nel tempo. La versione più recente sarà resa disponibile tramite l'App o il sito collegato. 
-12. Legge applicabile
-I presenti Termini sono disciplinati dalla legge italiana, salvo diverse disposizioni inderogabili applicabili a tutela del consumatore. 
-13. Contatti
-Per informazioni o richieste relative all'App: ducciodellabella@gmail.com
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Termini e Condizioni - BilancioAI</title>
+  <meta name="description" content="Termini e Condizioni di BilancioAI" />
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #16345f;
+      --muted: #5f6f85;
+      --border: #dbe4f0;
+      --accent: #163d7a;
+      --accent-soft: #eaf1fb;
+      --shadow: 0 10px 30px rgba(19, 49, 92, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #f7f9fc 0%, #eef3f9 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 16px 56px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 32px 24px 24px;
+      background: linear-gradient(135deg, #163d7a 0%, #214f96 100%);
+      color: #fff;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 32px;
+      line-height: 1.15;
+    }
+
+    .updated {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 15px;
+    }
+
+    .content {
+      padding: 28px 24px 32px;
+    }
+
+    .intro {
+      font-size: 17px;
+      color: var(--muted);
+      margin: 0 0 28px;
+    }
+
+    .toc {
+      background: var(--accent-soft);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px 18px 10px;
+      margin-bottom: 28px;
+    }
+
+    .toc-title {
+      margin: 0 0 12px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .toc ul {
+      margin: 0;
+      padding-left: 18px;
+      columns: 2;
+      gap: 24px;
+    }
+
+    .toc li {
+      margin-bottom: 8px;
+    }
+
+    .toc a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding-top: 8px;
+      margin-top: 8px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.25;
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 14px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .contact-box {
+      background: #f8fbff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      margin-top: 10px;
+    }
+
+    .contact-box strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .footer {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      .wrap {
+        padding: 20px 12px 40px;
+      }
+
+      .hero {
+        padding: 24px 18px 20px;
+      }
+
+      .content {
+        padding: 22px 18px 26px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .toc ul {
+        columns: 1;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card">
+      <header class="hero">
+        <div class="badge">BilancioAI</div>
+        <h1>Termini e Condizioni</h1>
+        <p class="updated">Ultimo aggiornamento: 15/04/2026</p>
+      </header>
+
+      <div class="content">
+        <p class="intro">
+          I presenti Termini e Condizioni disciplinano l'utilizzo dell'app BilancioAI.
+        </p>
+
+        <nav class="toc" aria-label="Indice dei termini e condizioni">
+          <p class="toc-title">Indice</p>
+          <ul>
+            <li><a href="#titolare">1. Titolare / Sviluppatore</a></li>
+            <li><a href="#oggetto">2. Oggetto del servizio</a></li>
+            <li><a href="#natura">3. Natura del servizio</a></li>
+            <li><a href="#responsabilita-utente">4. Responsabilità dell'utente</a></li>
+            <li><a href="#limitazioni">5. Limitazioni del servizio</a></li>
+            <li><a href="#disponibilita">6. Disponibilità e modifiche</a></li>
+            <li><a href="#proprieta">7. Proprietà intellettuale</a></li>
+            <li><a href="#garanzie">8. Esclusione di garanzie</a></li>
+            <li><a href="#responsabilita">9. Limitazione di responsabilità</a></li>
+            <li><a href="#privacy">10. Privacy</a></li>
+            <li><a href="#modifiche">11. Modifiche ai Termini</a></li>
+            <li><a href="#legge">12. Legge applicabile</a></li>
+            <li><a href="#contatti">13. Contatti</a></li>
+          </ul>
+        </nav>
+
+        <section id="titolare">
+          <h2>1. Titolare / Sviluppatore</h2>
+          <div class="contact-box">
+            <strong>L'App è fornita da:</strong>
+            <p>Duccio Della Bella</p>
+            <p>Contatto: <a href="mailto:ducciodellabella@gmail.com">ducciodellabella@gmail.com</a></p>
+          </div>
+        </section>
+
+        <section id="oggetto">
+          <h2>2. Oggetto del servizio</h2>
+          <p>
+            BilancioAI è uno strumento digitale di supporto alla gestione personale delle spese e dei movimenti economici.
+            L'App può aiutare l'utente a leggere, organizzare e classificare informazioni economiche ricavate da notifiche
+            o dati inseriti manualmente.
+          </p>
+        </section>
+
+        <section id="natura">
+          <h2>3. Natura del servizio</h2>
+          <p>
+            BilancioAI fornisce un supporto organizzativo e informativo. L'App non costituisce servizio bancario,
+            finanziario, di investimento, fiscale o consulenza professionale.
+          </p>
+          <p>
+            Le informazioni, categorizzazioni, riepiloghi o suggerimenti forniti dall'App hanno finalità meramente
+            informative e di supporto personale.
+          </p>
+        </section>
+
+        <section id="responsabilita-utente">
+          <h2>4. Responsabilità dell'utente</h2>
+          <p>L'utente è responsabile di:</p>
+          <ul>
+            <li>verificare la correttezza dei dati mostrati dall'App;</li>
+            <li>controllare eventuali categorizzazioni automatiche;</li>
+            <li>usare l'App in modo lecito e conforme alle regole applicabili;</li>
+            <li>custodire il proprio dispositivo e le relative autorizzazioni.</li>
+          </ul>
+        </section>
+
+        <section id="limitazioni">
+          <h2>5. Limitazioni del servizio</h2>
+          <p>
+            L'App potrebbe non riconoscere correttamente tutte le notifiche, tutti gli importi o tutti gli esercenti.
+            Potrebbero verificarsi errori, duplicazioni, omissioni o categorizzazioni imprecise.
+          </p>
+          <p>
+            L'utente riconosce che l'uso dell'App avviene sotto la propria responsabilità e che i dati mostrati devono
+            essere verificati prima di assumere decisioni economiche o personali.
+          </p>
+        </section>
+
+        <section id="disponibilita">
+          <h2>6. Disponibilità e modifiche</h2>
+          <p>
+            Lo sviluppatore si riserva il diritto di modificare, sospendere o interrompere, in tutto o in parte, l'App
+            o alcune sue funzioni, anche senza preavviso, salvo quanto richiesto dalla legge applicabile.
+          </p>
+        </section>
+
+        <section id="proprieta">
+          <h2>7. Proprietà intellettuale</h2>
+          <p>
+            Il software, il nome BilancioAI, il design, i contenuti originali e gli elementi distintivi dell'App restano
+            di titolarità dello sviluppatore o dei rispettivi aventi diritto.
+          </p>
+          <p>
+            È vietata la copia, distribuzione, modifica o utilizzazione non autorizzata.
+          </p>
+        </section>
+
+        <section id="garanzie">
+          <h2>8. Esclusione di garanzie</h2>
+          <p>
+            L'App è fornita “così com'è” e “secondo disponibilità”, nei limiti consentiti dalla legge.
+            Lo sviluppatore non garantisce che l'App sia priva di errori, sempre disponibile o adatta a esigenze specifiche dell'utente.
+          </p>
+        </section>
+
+        <section id="responsabilita">
+          <h2>9. Limitazione di responsabilità</h2>
+          <p>
+            Nei limiti consentiti dalla legge, lo sviluppatore non sarà responsabile per danni indiretti, perdita di dati,
+            perdita di opportunità, mancati risparmi o decisioni prese dall'utente sulla base delle informazioni mostrate dall'App.
+          </p>
+          <p>
+            Resta ferma la responsabilità nei casi in cui essa non possa essere esclusa o limitata per legge.
+          </p>
+        </section>
+
+        <section id="privacy">
+          <h2>10. Privacy</h2>
+          <p>
+            L'utilizzo dell'App è soggetto anche alla relativa Informativa sulla Privacy, che costituisce parte integrante
+            della documentazione informativa del servizio.
+          </p>
+        </section>
+
+        <section id="modifiche">
+          <h2>11. Modifiche ai Termini</h2>
+          <p>
+            I presenti Termini possono essere aggiornati nel tempo. La versione più recente sarà resa disponibile tramite
+            l'App o il sito collegato.
+          </p>
+        </section>
+
+        <section id="legge">
+          <h2>12. Legge applicabile</h2>
+          <p>
+            I presenti Termini sono disciplinati dalla legge italiana, salvo diverse disposizioni inderogabili applicabili
+            a tutela del consumatore.
+          </p>
+        </section>
+
+        <section id="contatti">
+          <h2>13. Contatti</h2>
+          <div class="contact-box">
+            <strong>Per informazioni o richieste relative all'App:</strong>
+            <p><a href="mailto:ducciodellabella@gmail.com">ducciodellabella@gmail.com</a></p>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <p>© 2026 BilancioAI - Tutti i diritti riservati.</p>
+        </footer>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
