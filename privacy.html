@@ -1,43 +1,370 @@
-Informativa sulla Privacy di BilancioAI
-Ultimo aggiornamento: 15/04/2026
-La presente Informativa sulla Privacy descrive come l'app BilancioAI tratta i dati degli utenti. 
-1. Titolare / Sviluppatore
-BilancioAI è sviluppata e gestita da: Duccio Della Bella Email di contatto privacy: ducciodellabella@gmail.com
-2. Finalità dell'App
-BilancioAI è un'app pensata per aiutare l'utente a monitorare e organizzare le proprie spese personali, anche attraverso l'analisi di notifiche ricevute sul dispositivo, al fine di identificare movimenti di pagamento e categorizzarli in modo automatico. 
-3. Dati trattati
-L'App può accedere o trattare le seguenti categorie di dati, in base alle autorizzazioni concesse dall'utente: 
-* notifiche ricevute sul dispositivo;
-* contenuti testuali delle notifiche, inclusi mittente, titolo e testo;
-* dati finanziari o di pagamento contenuti nelle notifiche, come importo, esercente o causale, quando presenti;
-* dati tecnici minimi necessari al funzionamento dell'App, come versione dell'app o del dispositivo, log tecnici e informazioni diagnostiche, se presenti.
-4. Come vengono usati i dati
-I dati sono usati per:
-* rilevare automaticamente spese e movimenti;
-* categorizzare le transazioni;
-* mostrare statistiche, riepiloghi e suggerimenti all'interno dell'App;
-* migliorare l'affidabilità del riconoscimento delle spese;
-* prevenire errori, malfunzionamenti o duplicazioni.
-5. Trattamento locale sul dispositivo
-Alla data attuale, BilancioAI elabora i dati principalmente in locale sul dispositivo dell'utente, salvo eventuali funzionalità future esplicitamente descritte e accettate dall'utente. 
-Se una futura versione dell'App dovesse introdurre sincronizzazione cloud, backup online, account utente o funzionalità AI basate su server esterni, questa Informativa verrà aggiornata prima dell'attivazione di tali funzionalità. 
-6. Condivisione dei dati
-Alla data attuale, BilancioAI non vende i dati personali dell'utente e non li condivide con terze parti per finalità pubblicitarie. 
-Nel caso in cui l'App utilizzi in futuro servizi tecnici di terze parti, ad esempio hosting, analisi crash, autenticazione o funzionalità AI, tali trattamenti saranno indicati in modo chiaro in questa Informativa. 
-7. Base del trattamento e autorizzazioni
-Il funzionamento di alcune funzioni dell'App richiede l'autorizzazione dell'utente ad accedere alle notifiche del dispositivo. L'utente può negare o revocare tali autorizzazioni in qualsiasi momento dalle impostazioni del proprio dispositivo. In tal caso, alcune funzioni dell'App potrebbero non essere disponibili o funzionare in modo limitato. 
-8. Conservazione dei dati
-I dati memorizzati dall'App vengono conservati:
-* fino a quando l'utente non li elimina manualmente dall'App, ove previsto;
-* oppure fino alla disinstallazione dell'App;
-* oppure per il tempo strettamente necessario a garantire il corretto funzionamento tecnico dell'App.
-Se in futuro verranno introdotti account online o archiviazione remota, i tempi di conservazione saranno specificati in questa Informativa. 
-9. Sicurezza
-BilancioAI adotta misure tecniche ragionevoli per proteggere i dati trattati contro accessi non autorizzati, perdita, uso improprio o divulgazione non consentita. Tuttavia, nessun sistema può garantire sicurezza assoluta. 
-10. Minori
-L'App non è destinata a minori di età inferiore a 14 anni. Se ritieni che un minore abbia usato l'App fornendo dati in modo non appropriato, contattaci ai riferimenti indicati sotto. 
-11. Diritti e richieste
-Per qualsiasi richiesta relativa alla privacy, ai dati trattati o alla loro eliminazione, l'utente può contattare: inserisci-la-tua-email@example.com 
-12. Modifiche alla presente Informativa
-Questa Informativa può essere aggiornata nel tempo. In caso di modifiche rilevanti, l'App o il sito potranno mostrare un avviso all'utente. Fa fede la data di ultimo aggiornamento indicata in alto. 
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - BilancioAI</title>
+  <meta name="description" content="Informativa sulla Privacy di BilancioAI" />
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --text: #16345f;
+      --muted: #5f6f85;
+      --border: #dbe4f0;
+      --accent: #163d7a;
+      --accent-soft: #eaf1fb;
+      --shadow: 0 10px 30px rgba(19, 49, 92, 0.08);
+    }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: linear-gradient(180deg, #f7f9fc 0%, #eef3f9 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 16px 56px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .hero {
+      padding: 32px 24px 24px;
+      background: linear-gradient(135deg, #163d7a 0%, #214f96 100%);
+      color: #fff;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 32px;
+      line-height: 1.15;
+    }
+
+    .updated {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 15px;
+    }
+
+    .content {
+      padding: 28px 24px 32px;
+    }
+
+    .intro {
+      font-size: 17px;
+      color: var(--muted);
+      margin: 0 0 28px;
+    }
+
+    .toc {
+      background: var(--accent-soft);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px 18px 10px;
+      margin-bottom: 28px;
+    }
+
+    .toc-title {
+      margin: 0 0 12px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .toc ul {
+      margin: 0;
+      padding-left: 18px;
+      columns: 2;
+      gap: 24px;
+    }
+
+    .toc li {
+      margin-bottom: 8px;
+    }
+
+    .toc a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding-top: 8px;
+      margin-top: 8px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      line-height: 1.25;
+      color: var(--accent);
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 14px;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .contact-box {
+      background: #f8fbff;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+      margin-top: 10px;
+    }
+
+    .contact-box strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    .footer {
+      margin-top: 24px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      .wrap {
+        padding: 20px 12px 40px;
+      }
+
+      .hero {
+        padding: 24px 18px 20px;
+      }
+
+      .content {
+        padding: 22px 18px 26px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .toc ul {
+        columns: 1;
+      }
+
+      .intro {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <article class="card">
+      <header class="hero">
+        <div class="badge">BilancioAI</div>
+        <h1>Informativa sulla Privacy</h1>
+        <p class="updated">Ultimo aggiornamento: 15/04/2026</p>
+      </header>
+
+      <div class="content">
+        <p class="intro">
+          La presente Informativa sulla Privacy descrive come l'app BilancioAI tratta i dati degli utenti.
+        </p>
+
+        <nav class="toc" aria-label="Indice della privacy policy">
+          <p class="toc-title">Indice</p>
+          <ul>
+            <li><a href="#titolare">1. Titolare / Sviluppatore</a></li>
+            <li><a href="#finalita">2. Finalità dell'App</a></li>
+            <li><a href="#dati">3. Dati trattati</a></li>
+            <li><a href="#uso">4. Come vengono usati i dati</a></li>
+            <li><a href="#locale">5. Trattamento locale sul dispositivo</a></li>
+            <li><a href="#condivisione">6. Condivisione dei dati</a></li>
+            <li><a href="#autorizzazioni">7. Base del trattamento e autorizzazioni</a></li>
+            <li><a href="#conservazione">8. Conservazione dei dati</a></li>
+            <li><a href="#sicurezza">9. Sicurezza</a></li>
+            <li><a href="#minori">10. Minori</a></li>
+            <li><a href="#diritti">11. Diritti e richieste</a></li>
+            <li><a href="#modifiche">12. Modifiche alla presente Informativa</a></li>
+          </ul>
+        </nav>
+
+        <section id="titolare">
+          <h2>1. Titolare / Sviluppatore</h2>
+          <div class="contact-box">
+            <strong>BilancioAI è sviluppata e gestita da:</strong>
+            <p>Duccio Della Bella</p>
+            <p>Email di contatto privacy: <a href="mailto:ducciodellabella@gmail.com">ducciodellabella@gmail.com</a></p>
+          </div>
+        </section>
+
+        <section id="finalita">
+          <h2>2. Finalità dell'App</h2>
+          <p>
+            BilancioAI è un'app pensata per aiutare l'utente a monitorare e organizzare le proprie spese personali,
+            anche attraverso l'analisi di notifiche ricevute sul dispositivo, al fine di identificare movimenti di
+            pagamento e categorizzarli in modo automatico.
+          </p>
+        </section>
+
+        <section id="dati">
+          <h2>3. Dati trattati</h2>
+          <p>
+            L'App può accedere o trattare le seguenti categorie di dati, in base alle autorizzazioni concesse dall'utente:
+          </p>
+          <ul>
+            <li>notifiche ricevute sul dispositivo;</li>
+            <li>contenuti testuali delle notifiche, inclusi mittente, titolo e testo;</li>
+            <li>dati finanziari o di pagamento contenuti nelle notifiche, come importo, esercente o causale, quando presenti;</li>
+            <li>dati tecnici minimi necessari al funzionamento dell'App, come versione dell'app o del dispositivo, log tecnici e informazioni diagnostiche, se presenti.</li>
+          </ul>
+        </section>
+
+        <section id="uso">
+          <h2>4. Come vengono usati i dati</h2>
+          <p>I dati sono usati per:</p>
+          <ul>
+            <li>rilevare automaticamente spese e movimenti;</li>
+            <li>categorizzare le transazioni;</li>
+            <li>mostrare statistiche, riepiloghi e suggerimenti all'interno dell'App;</li>
+            <li>migliorare l'affidabilità del riconoscimento delle spese;</li>
+            <li>prevenire errori, malfunzionamenti o duplicazioni.</li>
+          </ul>
+        </section>
+
+        <section id="locale">
+          <h2>5. Trattamento locale sul dispositivo</h2>
+          <p>
+            Alla data attuale, BilancioAI elabora i dati principalmente in locale sul dispositivo dell'utente, salvo
+            eventuali funzionalità future esplicitamente descritte e accettate dall'utente.
+          </p>
+          <p>
+            Se una futura versione dell'App dovesse introdurre sincronizzazione cloud, backup online, account utente o
+            funzionalità AI basate su server esterni, questa Informativa verrà aggiornata prima dell'attivazione di tali funzionalità.
+          </p>
+        </section>
+
+        <section id="condivisione">
+          <h2>6. Condivisione dei dati</h2>
+          <p>
+            Alla data attuale, BilancioAI non vende i dati personali dell'utente e non li condivide con terze parti per finalità pubblicitarie.
+          </p>
+          <p>
+            Nel caso in cui l'App utilizzi in futuro servizi tecnici di terze parti, ad esempio hosting, analisi crash,
+            autenticazione o funzionalità AI, tali trattamenti saranno indicati in modo chiaro in questa Informativa.
+          </p>
+        </section>
+
+        <section id="autorizzazioni">
+          <h2>7. Base del trattamento e autorizzazioni</h2>
+          <p>
+            Il funzionamento di alcune funzioni dell'App richiede l'autorizzazione dell'utente ad accedere alle notifiche del dispositivo.
+            L'utente può negare o revocare tali autorizzazioni in qualsiasi momento dalle impostazioni del proprio dispositivo.
+            In tal caso, alcune funzioni dell'App potrebbero non essere disponibili o funzionare in modo limitato.
+          </p>
+        </section>
+
+        <section id="conservazione">
+          <h2>8. Conservazione dei dati</h2>
+          <p>I dati memorizzati dall'App vengono conservati:</p>
+          <ul>
+            <li>fino a quando l'utente non li elimina manualmente dall'App, ove previsto;</li>
+            <li>oppure fino alla disinstallazione dell'App;</li>
+            <li>oppure per il tempo strettamente necessario a garantire il corretto funzionamento tecnico dell'App.</li>
+          </ul>
+          <p>
+            Se in futuro verranno introdotti account online o archiviazione remota, i tempi di conservazione saranno
+            specificati in questa Informativa.
+          </p>
+        </section>
+
+        <section id="sicurezza">
+          <h2>9. Sicurezza</h2>
+          <p>
+            BilancioAI adotta misure tecniche ragionevoli per proteggere i dati trattati contro accessi non autorizzati,
+            perdita, uso improprio o divulgazione non consentita. Tuttavia, nessun sistema può garantire sicurezza assoluta.
+          </p>
+        </section>
+
+        <section id="minori">
+          <h2>10. Minori</h2>
+          <p>
+            L'App non è destinata a minori di età inferiore a 18 anni. Se ritieni che un minore abbia usato l'App
+            fornendo dati in modo non appropriato, contattaci ai riferimenti indicati sotto.
+          </p>
+        </section>
+
+        <section id="diritti">
+          <h2>11. Diritti e richieste</h2>
+          <p>
+            Per qualsiasi richiesta relativa alla privacy, ai dati trattati o alla loro eliminazione, l'utente può contattare:
+          </p>
+          <div class="contact-box">
+            <strong>Contatto privacy</strong>
+            <p><a href="mailto:ducciodellabella@gmail.com">ducciodellabella@gmail.com</a></p>
+          </div>
+        </section>
+
+        <section id="modifiche">
+          <h2>12. Modifiche alla presente Informativa</h2>
+          <p>
+            Questa Informativa può essere aggiornata nel tempo. In caso di modifiche rilevanti, l'App o il sito potranno
+            mostrare un avviso all'utente. Fa fede la data di ultimo aggiornamento indicata in alto.
+          </p>
+        </section>
+
+        <footer class="footer">
+          <p>© 2026 BilancioAI - Tutti i diritti riservati.</p>
+        </footer>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
